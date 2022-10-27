@@ -1,0 +1,16 @@
+exemplos/script.js
+
+k6 run exemplos/script.js
+
+k6 run exemplos/usingOptions.js
+
+k6 run exemplos/usingStages.js
+
+k6 run --vus 10 --duration 30s exemplos/script.js
+
+k6 run exemplos/smokeTest.js
+
+k6 run --iterations=100 --vus=10 --summary-trend-stats="med,p(95),p(99.9)" exemplos/script.js
+
+
+
